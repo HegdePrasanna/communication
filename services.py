@@ -14,5 +14,4 @@ async def create_message(message_data:MessageSend, db:session):
     db.add(new_message)
     db.commit()
     db.refresh(new_message)
-    print(new_message)
     return new_message
